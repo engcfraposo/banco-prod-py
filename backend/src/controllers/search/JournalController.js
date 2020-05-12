@@ -14,7 +14,7 @@ module.exports = {
             },
         })
 
-        return response.json(articles)
+        return response.json([articles, { total_articles: articles.length}])
 
     },   
                 

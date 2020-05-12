@@ -6,7 +6,7 @@ module.exports = {
     async index(request, response){
 
         const monograpys = await Monograpy.find();
-        return response.json(monograpys)
+        return response.json([monograpys, {total_monograpy: monograpys.length}])
         
     },
 

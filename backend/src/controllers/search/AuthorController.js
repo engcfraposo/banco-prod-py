@@ -35,7 +35,8 @@ module.exports = {
             },
         })
 
-        return response.json([articles, banners, books, monograpys])
+        return response.json([[articles, banners, books, monograpys],
+            [{total_articles: articles.length}, {total_banners:banners.length}, {total_books:books.length}, {total_monograpys: monograpys.length}]])
 
         
 

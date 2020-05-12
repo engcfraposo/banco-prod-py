@@ -7,7 +7,7 @@ module.exports = {
     async index(request, response){
 
         const banners = await Banner.find();
-        return response.json(banners)
+        return response.json([banners, {total_banners: banners.length}])
         
     },
 

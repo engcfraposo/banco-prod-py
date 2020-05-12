@@ -6,7 +6,7 @@ module.exports = {
     async index(request, response){
 
         const books = await Book.find();
-        return response.json(books)
+        return response.json([books, {total_books: books.length}])
         
     },
 
