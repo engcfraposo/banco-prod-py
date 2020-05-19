@@ -1,0 +1,50 @@
+.container{
+    margin: 60px auto 0;
+    max-width: 450px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+  }
+
+
+  .content{
+    width: 1260px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 30px;
+   }
+
+  .content h1, p, span{
+    text-align: center;
+      
+  }
+
+
+  .textContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .textBlock{
+    padding: 0 20px;
+    width: 450px;
+    height: auto;
+    text-align: justify;
+    
+  }
+
+ 
+
+  .textBlock p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  

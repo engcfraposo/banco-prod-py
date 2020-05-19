@@ -5,6 +5,7 @@ import './styles.css';
 
 export default function Navbars() {
   return ( 
+
     <Navbar bg="primary" variant="dark" fixed="top" className='navbar'>
       
         <div className="menu">
@@ -16,15 +17,16 @@ export default function Navbars() {
           <div className="menuContent">
           
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Pagina Inicial</Nav.Link>
-                <Nav.Link href="#features">Pesquisar</Nav.Link>
-                <Nav.Link href="#pricing">Entrar</Nav.Link>
-                <Nav.Link href="#pricing">Suporte</Nav.Link>
+                <Nav.Link href="/">Pagina Inicial</Nav.Link>
+                <Nav.Link href="/search">Pesquisar</Nav.Link>
+                <Nav.Link href="/logon">Entrar</Nav.Link>
+                <Nav.Link href="/support">Suporte</Nav.Link>
             </Nav>
 
           </div>
         </div>
     </Navbar>
+
   );
 }
 
